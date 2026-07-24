@@ -1,5 +1,5 @@
 // `API` is provided by js/api.js (global `window.API`) with a safe fallback.
-const API = window.API || window.getApiBase?.() || 'http://127.0.0.1:8000/backend';
+const API = window.API || window.getApiBase?.() || 'http://127.0.0.1:80/backend';
 window.CUSTOMER_REVIEWS = window.CUSTOMER_REVIEWS || [
   { name: 'Amina K.', rating: 5, quote: 'The booking flow was smooth and the car was spotless. I would rent again.' },
   { name: 'Daniel M.', rating: 5, quote: 'Great selection of premium cars and fast support from the team.' },

@@ -34,7 +34,7 @@ async function checkBackendReachable() {
     showError(`Backend reachable but responded ${res.status}`);
     return false;
   } catch (err) {
-    const msg = 'Backend unreachable. Run a local PHP server from the project root, e.g. `php -S 127.0.0.1:8000 -t .` and open http://127.0.0.1:8000/auth/login.html';
+    const msg = 'Backend unreachable. Run a local PHP server from the project root, e.g. `php -S 127.0.0.1:80 -t .` and open http://127.0.0.1/auth/login.html';
     showError(msg);
     return false;
   }

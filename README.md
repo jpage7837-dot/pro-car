@@ -38,13 +38,13 @@ Modern, responsive car rental platform built with:
 
 ```bash
 cd "path/to/pro car"
-php -S localhost:8000
+php -S localhost:80
 ```
 
 3. Open the app in your browser:
 
 ```text
-http://localhost:8000/index.html
+http://localhost/index.html
 ```
 
 ## Project Structure
@@ -192,7 +192,7 @@ if (!hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
 
 ```bash
 cd "path/to/pro car"
-php -S 127.0.0.1:8000 -t .
+php -S 127.0.0.1:80 -t .
 ```
 
 ### Cloud Deployment

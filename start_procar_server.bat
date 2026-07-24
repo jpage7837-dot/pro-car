@@ -17,10 +17,10 @@ if not exist "%PHP_EXE%" (
 if not exist "%CHROME_EXE%" (
   echo Chrome not found at %CHROME_EXE%
   echo Falling back to the system default browser.
-  start "Pro Car PHP Server" "%PHP_EXE%" -S 127.0.0.1:8000 -t .
-  start "http://127.0.0.1:8000/index.html" http://127.0.0.1:8000/index.html
+  start "Pro Car PHP Server" "%PHP_EXE%" -S 127.0.0.1:80 -t .
+  start "http://127.0.0.1/index.html" http://127.0.0.1/index.html
   exit /b 0
 )
 
-start "Pro Car PHP Server" "%PHP_EXE%" -S 127.0.0.1:8000 -t .
-start "" "%CHROME_EXE%" --new-window http://127.0.0.1:8000/index.html
+start "Pro Car PHP Server" "%PHP_EXE%" -S 127.0.0.1:80 -t .
+start "" "%CHROME_EXE%" --new-window http://127.0.0.1/index.html
