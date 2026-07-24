@@ -8,9 +8,9 @@ if (session_status() === PHP_SESSION_NONE) {
 
 $MYSQL_HOST = getenv('MYSQL_HOST') ?: '127.0.0.1';
 $MYSQL_PORT = getenv('MYSQL_PORT') ?: '3306';
-$MYSQL_DB = getenv('MYSQL_DB') ?: 'pro_car';
+$MYSQL_DB = getenv('MYSQL_DATABASE') ?: getenv('MYSQL_DB') ?: 'pro_car';
 $MYSQL_USER = getenv('MYSQL_USER') ?: 'root';
-$MYSQL_PASS = getenv('MYSQL_PASS') ?: '';
+$MYSQL_PASS = getenv('MYSQL_PASSWORD') ?: getenv('MYSQL_PASS') ?: '';
 $MYSQL_CHARSET = getenv('MYSQL_CHARSET') ?: 'utf8mb4';
 
 function getMySqlConfig(): array
